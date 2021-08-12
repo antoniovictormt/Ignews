@@ -30,4 +30,19 @@
   &:hover {
     filter: brightness(0.8);
   }
+  
+  @media(max-width:1080px) {
+
+    svg:first-child {
+      margin-right: 0;
+    }
+  
+    svg.closeIcon {
+      margin-left: 1rem;
+    }
+
+    h5 {
+      display: none;
+    }
+  }
 }

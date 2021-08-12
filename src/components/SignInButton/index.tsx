@@ -10,13 +10,17 @@ export function SignInButton() {
   return session ? (
     <button className={styles.signInButton} type="button" onClick={() => signOut()}>
       <FaGithub color="#04D361" />
-      {session.user.name}
+      <h5>
+        {session.user.name}
+      </h5>
       <FiX color="#737380" className={styles.closeIcon} />
     </button>
   ): (
     <button className={styles.signInButton} type="button" onClick={() => signIn('github')}>
       <FaGithub color="#EBA417" />
-      Sign in with GitHub
+      <h5>
+        Sign in with GitHub
+      </h5>
     </button>
   )
 }
