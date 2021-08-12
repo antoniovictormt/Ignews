@@ -50,7 +50,6 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 export default function Posts({ posts }: PostsProps) {
-  console.log(posts, 'posts')
 
   return (
     <>
