@@ -12,6 +12,10 @@
   h1 {
     font-size: 3rem;
     font-weight: 900;
+
+    @media(max-width: 1080px) {
+      font-size: 1.75rem;
+    }
   }
   
   time {
@@ -26,6 +30,7 @@
     line-height: 2rem;
     font-size: 1.125rem;
     color: var(--gray-100);
+    text-align: justify;
 
     p, ul {
       margin: 1.5rem 0;

@@ -30,6 +30,8 @@
       font-size: 1.5rem;
       margin-top: 1rem;
       line-height: 2rem;
+      text-align: justify;
+      
       transition: color 0.2s;
     }
   
@@ -37,6 +39,7 @@
       color: var(--gray-300);
       margin-top: 0.5rem;
       line-height: 1.625rem;
+      text-align: justify;
     }
 
     &:hover {
