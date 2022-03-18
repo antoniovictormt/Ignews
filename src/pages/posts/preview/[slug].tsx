@@ -8,7 +8,7 @@ import { getPrismicClient } from "../../../services/prismic";
 
 import styles from '../post.module.scss';
 import { useEffect } from "react";
-import router from "next/router";
+import { useRouter } from "next/router";
 
 type PostsPreviewProps = {
   post: {
@@ -53,6 +53,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export default function PostPreview({ post }: PostsPreviewProps) {
+  const router = useRouter();
   const [session] = useSession();
 
   useEffect(() => {
